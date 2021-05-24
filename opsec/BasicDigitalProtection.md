@@ -21,11 +21,8 @@ Contents:
 9. Antivirus and Malware
 10. File Deletion
 11. Storage and Encryption
-	11.1 HDD
-	11.2 SSD
 12. Safe Communication
-	12.1 Mobile
-	12.2 Email
+
 
 
 * privacy and anonymity should not be overlooked... 
@@ -41,14 +38,13 @@ First steps:
 	- remove unnecessary extensions and permission, check following:
 		- email device permissions, email service permissions, FB addons, Twitter addons, etc.
 
-## 1. Privacy and Settings;
-* Windows 
-	* Win10Privacy
-		- https://www.w10privacy.de/english-home/
-	* SysInternals
-		- https://www.howtogeek.com/school/sysinternals-pro/lesson1/
-	* Crank UAC way up
-
+## 1. Permissions and Settings;
+Windows 
+* Win10Privacy
+	- https://www.w10privacy.de/english-home/
+* SysInternals
+	- https://www.howtogeek.com/school/sysinternals-pro/lesson1/
+* Crank UAC way up
 
 TODO: update info for different os, more in-depth
 
@@ -69,27 +65,26 @@ Avoid by using;
 		- https://www.explainxkcd.com/wiki/index.php/936:_Password_Strength#Explanation
 		- other great info, more technical: https://theworld.com/~reinhold/dicewarefaq.html#calculatingentropy
 	- https://ssd.eff.org/en/module/creating-strong-passwords  
-	
 
 Use a password manager - don't use cloud based if possible ... if you use then use difficult major password 
-* Options:
-	* KeePass **FOSS**
-		- https://keepassxc.org/
-	* LastPass
-		- https://www.lastpass.com/
-	* Bitwarden, etc.
-* Tips:
-	- compartmentalize passwords in different pass manager instances based off function (school, work, etc.),  
-	- Change passwords regularly, set a reminder every 30-60 days at least
-- Tutorials:
-	- https://www.howtogeek.com/141500/why-you-should-use-a-password-manager-and-how-to-get-started/
 
-**BIOMETRICS ARE NOT MORE SECURE** -> FACE AND FINGERPRINT ARE EASILY HACKABLE
-	* CANDA ENFORCES PASSWORD TO BE HANDED OVER BY LAW************
+**Passwor Managers**
+Options:
+* KeePass **FOSS**
+	- https://keepassxc.org/
+* LastPass
+	- https://www.lastpass.com/
+* Bitwarden, etc.
+Tips:
+- compartmentalize passwords in different pass manager instances based off function (school, work, etc.),  
+- Change passwords regularly, set a reminder every 30-60 days at least
+Tutorials:
+- https://www.howtogeek.com/141500/why-you-should-use-a-password-manager-and-how-to-get-started/
+
 
 Security Questions;
 * Don't be honest... enter fake info, use **SEPERATE** password manager instance to store answers
-		- https://www.wired.com/2016/09/time-kill-security-questions-answer-lies/
+	- https://www.wired.com/2016/09/time-kill-security-questions-answer-lies/
 
 
 ## 2. MultiFactor Authentication;
@@ -206,7 +201,7 @@ Other tracking methods;
 PUPs (potentially unwanted programs);
 * Read all checks when installing software, dont install unneeded programs
 
-## 7. Browser Uniqueness, aka fingerprinting
+## 7. Browser Uniqueness (Fingerprinting)
 
 Testing Browser Uniqueness;
 * Panopticlick
@@ -224,9 +219,9 @@ Mitigation;
 * USE PSEUDONYMS FOR FLIPS SAKE
 	* password manager makes this easier... use random email addresses for different walks of life (school, social, work, etc.)
 
-## 8. VPNs & Proxie
+## 8. VPNs and Proxies
 
-8.1 Proxies;
+### 8.1 Proxies;
 Implemented on;
 	- online services -> ex; Smart VPN: Proxy (windows)
 	- configured directly in settings or operating system 
@@ -239,7 +234,7 @@ Downsides;
 	- no extra security features built in
 		****** shadow-proxies do (shadowsocks)
 
-8.2 VPNs;
+### 8.2 VPNs;
 Implementation;
 - dont use free, unless solid free-tier (protonvpn, Windscribe) -> okay, but not great 
 - key things to look for;
@@ -282,12 +277,12 @@ Allow for Payment Privacy;
 ****** Self-Hosting VPN -> BESTTTTTTT, new WireGuard potentially solid but still reccomend OpenVPN 	
 
 
-### 9. Antiviruses & Malware 
+### 9. Antiviruses and Malware 
 Quick primers:
 	- https://www.howtogeek.com/125650/htg-explains-how-antivirus-software-works/
 	- https://blog.malwarebytes.com/101/2015/06/10-easy-steps-to-clean-your-infected-computer/
 
-** heavily debated, generally make software more secure but some open you up to new exploits and vulnerability 
+* heavily debated, generally make software more secure but some open you up to new exploits and vulnerability 
 
 * WORST thing to do for privacy... scans and collect LITERALLY EVERYTHING on your computer lol
 * if you don't download random crap, and browse safely then don't use
@@ -325,12 +320,9 @@ Best Practices to protect without antivirus;
 Worst case Ontario just reinstall OS
 
 ## 10. File Deletion
-
 Emptying recycle bin doesn't delete your crap... it only deletes the pointer and makes slot availabler, until overwritten it's still recoverable... install Recuva to check this out
 
-Tools to use:
-
-Hard-Disks: 
+### 10.1 Hard-Disk Drives (HDD): 
 * Windows;
 	- CCleaner -> wipes unused data, makes comp faster
 		- https://www.ccleaner.com/ 
@@ -341,7 +333,7 @@ Hard-Disks:
 * Linux;
 	- Bleachbit is best bet
 
-Solid-State drives;
+### 10.2 Solid-State Drives;
 * wiping data is more difficult... wipe from bios, but beware this uses limited "writes" to disk
 * Just use an encrypted drive...
 	- see next on encryption
@@ -377,7 +369,7 @@ Top 4 Providers:
 	- cryptomator is a great tool;
 		- https://cryptomator.org/
  
- Other provides:
+Other provides:
 1. MEGA:
 	- https://mega.io/
 2. ProtonDrive:
@@ -385,34 +377,30 @@ Top 4 Providers:
 	* both seem solid, good alternatives for beginners
 
 BEST OPTIONS:
-	1. Nextcloud:
-		* FOSS, Self-Hosted 
-		* tricky setup, but worth the effort
-			- https://nextcloud.com/
+1. Nextcloud:
+	* FOSS, Self-Hosted 
+	* tricky setup, but worth the effort
+		- https://nextcloud.com/
 
 ## 12. Safe Communication:
-	
 Most methods rely on you using a specific service, and the other user as well... worth convincing ppl tho 
-
 
 *Background*:
 - SMS messages -> tech used for standard messaging... all of it is logged by governments lol... and tons of tools to steel that crap
 
-What to look for:
-* Messengers:
-	* Off-the-Record Messaging:
-		- crypto protocol, combines 128-AES, Diffie-Hellman key exchange, and SHA-1 hash function 
-		- also provides:
-			* forward secrecy
-			* malleable encryption
-	* XMPP:
-		- Extensible Messaging and Presence Protocol open comms protocol is good alternative
-	* Stick to FOSS
-	* Look for crap you need to sign up that can identify you
-	
+**What to look for:**
+Messengers:
+* Off-the-Record Messaging:
+	- crypto protocol, combines 128-AES, Diffie-Hellman key exchange, and SHA-1 hash function 
+	- also provides:
+		* forward secrecy
+		* malleable encryption
+* XMPP:
+	- Extensible Messaging and Presence Protocol open comms protocol is good alternative
+* Stick to FOSS
+* Look for crap you need to sign up that can identify you
 
-
-Modern communication methods:
+**Modern communication methods**:
 - SMS
 - Common commercial crap;
 	* iMessage, etc.
