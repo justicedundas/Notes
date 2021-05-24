@@ -1,10 +1,11 @@
 # OpSec -> Security, Privacy, Anonymity
-Notes on go-incognito	-> https://github.com/techlore/go-incognito (youtube account has videos)
+Sources:
+	- Notes on go-incognito	-> https://github.com/techlore/go-incognito (youtube account has videos)
+	- Great courses available at -> https://www.hoppersroppers.org/security/
 
 Extra Resources (temp):
-* *IF* you have time and legit care, please follow -> https://anonymousplanet.org/guide.html#introduction 
-* No, seriously ... work on the above guide, it's top notch
-* seriously make your life easier and go here for tools ... https://www.privacytools.io/
+* *IF* you have time and legit care, follow -> https://anonymousplanet.org/guide.html#introduction 
+* make your life easier and go here for tools ... https://www.privacytools.io/
 
 
 Contents:
@@ -26,43 +27,85 @@ Contents:
 		- Email
 
 
-
-Why OpSec?
-* lol... do i really need to explain you don't wnat all your crap stolen
-* privacy and anonymity should not be overlooked... 5 eyes especially, literally wiretapping the whole world haha 
+* privacy and anonymity should not be overlooked... 
 	- "but I don't do anything wrong who cares?" -> https://www.youtube.com/watch?v=M5N51k0o_8A
 
-
+First steps:
+	* Check if accounts/emails have been hacked:
+		- https://haveibeenpwned.com/
+	* Follow this quick guide:
+		- https://decentsecurity.com/securing-your-computer/
+	* Digital autopsy:
+		- go to email accounts and search "verify", "login", etc. and deleted old crap you've signed up for
+		- remove unnecessary extensions and permission, check following:
+			- email device permissions, email service permissions, FB addons, Twitter addons, etc.
 
 
 ## 1. Privacy and Settings;
 * Windows 
 	* Win10Privacy
-	* Grant minimum permissions to all apps
+		- https://www.w10privacy.de/english-home/
+	* SysInternals
+		- https://www.howtogeek.com/school/sysinternals-pro/lesson1/
+	* Crank UAC way up
 
-## Password;
-Password -> Hash on signup, if hash is like john the ripper, etc 
+
+TODO: update info for different os, more in-depth
+
+## 2. Password;
+
+Password Strength:
+	* https://web.archive.org/web/20170704130144/https://www.usna.edu/CyberDept/sy110/lec/cryptHashPswd/lec.html
+	* https://ssd.eff.org/en/module/creating-strong-passwords
+	
+Password -> Hash/Salt on signup, if hash is known then tools like john the ripper, etc. can be used to crack passwords
+	- https://crackstation.net/hashing-security.htm
+	- https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation/
 Other major issues from weak or stole passwords
 
 Avoid by using;
-* Long passwords based on entropy in information theory ... use dice trik for random dictionary terms  
+* Long passwords based on entropy in information theory ... use dice trick for random dictionary terms
+	- READ LINK BELOW... EXPLAINS INFO THEORY REGARDING STRONG PASSWORD... ORTHODOXY IS WRONG:
+		- https://www.explainxkcd.com/wiki/index.php/936:_Password_Strength#Explanation
+		- other great info, more technical: https://theworld.com/~reinhold/dicewarefaq.html#calculatingentropy
+	- https://ssd.eff.org/en/module/creating-strong-passwords  
+	
+
 * Use a password manager - don't use cloud based if possible ... if you use then use difficult major password 
-	* USE FOSS -> Keypass or bitwarden, best is masterpss if possible it's more secure 
-	* Other way, compartmentalize passwords based off function (school, work, etc.) and store in different password managers
-	* Change passwords regularly 
+	* Options:
+		* KeePass **FOSS**
+			- https://keepassxc.org/
+		* LastPass
+			- https://www.lastpass.com/
+		* Bitwarden, etc.
+	* Tips:
+		- compartmentalize passwords in different pass manager instances based off function (school, work, etc.),  
+		- Change passwords regularly, set a reminder every 30-60 days at least
+
+	- Tutorials:
+		- https://www.howtogeek.com/141500/why-you-should-use-a-password-manager-and-how-to-get-started/
 
 * BIOMETRICS ARE NOT MORE SECURE -> FACE AND FINGERPRINT ARE HACKABLE
 	* CANDA ENFORCES PASSWORD TO BE HANDED OVER BY LAW************
+Security Questions;
+	* Don't be honest... enter fake info, use **SEPERATE** password manager instance to store answers
+		- https://www.wired.com/2016/09/time-kill-security-questions-answer-lies/
 
-## 2. Security Questions;
 
-* Don't be honest... enter fake info, use passwrd manager to store answers
+## 2. MultiFactor Authentication;
+Two is better then none, more is better
+- https://www.cs.cornell.edu/courses/cs513/2005fa/NNLauthPeople.html
+
+Enable for any accunts that contain **ANY** valuable information ...
+- https://brainstation.io/cybersecurity/two-factor-auth
 
 
-## Two-Factor Authentication;
 * SMS - text verification;
 	* SMS 2-step is not secure... cell-phone providers have weak social engineering protections
 		* Still better then nothing
+		* Still *Sucks*
+			- https://www.wired.com/story/sim-swap-attack-defend-phone/
+			- https://www.theguardian.com/technology/2016/apr/19/ss7-hack-explained-mobile-phone-vulnerability-snooping-texts-calls
 
 * Private keys -> app generated 
 	* Generate keys every 30 seconds for identifcation after qr code scan
@@ -75,6 +118,7 @@ Avoid by using;
 * Best is physicl 2FA;
 	* Use USB or other memory deice to access, use it for operating systems or full disk encryption
 	* YubiKey
+		- https://web.archive.org/web/20180422212245/https://www.yubico.com/why-yubico/how-yubikey-works/
 	* Use TPM module so OS can only be booted on certain systems
 
 ## 3. Search Engines;
@@ -173,7 +217,6 @@ Avoid by using;
 		- http://browserspy.dk/
 	
 	- these will show you are easily trackable... less unique means easier to target for hackers tho...
-
 * Mitigation;
 	* Noscript -> see above
 	* UserAgent spoofer;
@@ -181,9 +224,9 @@ Avoid by using;
 	* USE PSEUDONYMS FOR FLIPS SAKE
 		* password manager makes this easier... use random email addresses for different walks of life (school, social, work, etc.)
 
-## 8. VPNs & Proxies
+## 8. VPNs & Proxie
 
-### Proxies;
+8.1 Proxies;
 	* Implemented on;
 		- online services -> ex; Smart VPN: Proxy (windows)
 		- configured directly in settings or operating system 
@@ -196,7 +239,7 @@ Avoid by using;
 		- no extra security features built in
 			****** shadow-proxies do (shadowsocks)
 
-### VPNs;
+8.2 VPNs;
 	* Implementation;
 		- dont use free, unless solid free-tier (protonvpn, Windscribe) -> okay, but not great 
 		- key things to look for;
@@ -210,7 +253,6 @@ Avoid by using;
 					- WATCH THIS, LEGIT -> https://www.youtube.com/watch?v=M5N51k0o_8A&feature=youtu.be
 				- AirVPN, PIA (private internet access) are solid and located in 14 eyes
 					- probably compromised tho... let's be real
-
 			- PFS (perfect forward secrecy)
 				- need to continuall cycle keys
 			- History;
@@ -220,7 +262,6 @@ Avoid by using;
 			- System KS;
 				- system killswitch -> setting that if vpn disconnects, all internet traffic stops 
 		*** list to look through -> https://www.privacytools.io/providers/vpn/
-
 	* Goals;
 		- Re-routes traffic through encrypted tunnel
 		- Hide IP address with encrypted traffic...
@@ -233,15 +274,18 @@ Avoid by using;
 			- annoying as hell... 
 		- Speed -> slower then norm
 
-Payment Privacy;
+Allow for Payment Privacy;
 * Mullvad
 * NordVPN using crypto
 * IVPN
 
-****** Self-Hosting VPN -> BESTTTTTTT, use WireGuard potentially but be careful... OpenVPN still the best 	
+****** Self-Hosting VPN -> BESTTTTTTT, new WireGuard potentially solid but still reccomend OpenVPN 	
 
 
 ### 9. Antiviruses & Malware 
+Quick primers:
+	- https://www.howtogeek.com/125650/htg-explains-how-antivirus-software-works/
+	- https://blog.malwarebytes.com/101/2015/06/10-easy-steps-to-clean-your-infected-computer/
 
 ** heavily debated, generally make software more secure but some open you up to new exploits and vulnerability 
 
@@ -255,18 +299,14 @@ Operating Systems Differences;
 	* Windows;
 		- windows already collects ALL of your data LOL, so jst use windows defender
 		- *Properly* configure it using a guide online 
-
 	* MacOS;
 		- beginners use pcbind
 		- if basic guidelines used above, then don't really need it
-
 	* Linux;
 		- lol don't need jack 
 		- run random ClamAV scans just incase tho
-
 	* iOS;
 		- if not rooted, then don't need jack
-
 	* Android;
 		- beginners get one if you download rndom crap
 
@@ -276,12 +316,13 @@ Best Practices to protect without antivirus;
 		a) windows has one
 		b) macOs needs to be enabled
 		c) linux, check out NetGuard no-root firewall, pretty solid functionality 
-
 	3. Prevent Keyloggers
 		- virtual keyboard can help
 		- GuardedID or other services for keystroke encryption
 	4. Self Awareness
 		- if you're an idiot and access insecure crap without proper tools, then just use it 
+		
+Worst case Ontario just reinstall OS
 
 ## 10. File Deletion
 
@@ -321,7 +362,6 @@ Good Tools;
 			- https://gnupg.org/
 
 
-
 Cloud Storage;
 	* top 4:
 		1. iCloud
@@ -332,21 +372,16 @@ Cloud Storage;
 			* encrypts data with AES-256 bit, but hold keys so can decrypt anytime 
 		4. Microsoft OneDrive
 			* doesn't encrypt storage... what a joke
-
 		* all encrypt traffic while it being uploaded, great so MITM can't see crap 
-
 		* IF YOU MUST USE you should encrypt files before uploading... they can see it all, and share
 			- cryptomator is a great tool;
 				- https://cryptomator.org/
-
 	* Other provides:
 		1. MEGA:
 			- https://mega.io/
 		2. ProtonDrive:
 			- https://protonmail.com/blog/proton-drive-early-access/
-
 		* both seem solid, good alternatives for beginners
-
 	* BEST OPTIONS:
 		1. Nextcloud:
 			* FOSS, Self-Hosted 
@@ -411,7 +446,6 @@ Recommendations:
 	* Messaging/Video/Voice:
 		- Signal:
 			- need to use phone, but get around using burner apps listed below or experienced self-host emulators 
-
 	* Secondary Number: 
 		- Burner:
 			- https://www.burnerapp.com/
@@ -419,22 +453,22 @@ Recommendations:
 			- getshuffle.com
 		- MySudo:
 			- https://mysudo.com/
-
 	* Email:
 		- Protonmail for beginners:
 			- https://protonmail.com/
 		- Self-hostig:
 			- best option if you know how, 
-
 	* Disposable Email:
 		- TempMail:	
 			- USE FOR BS SIGNUP OF SERVICES AT THE LEAST
 			- https://temp-mail.org/
-			
 		** beware metadata in headers.... both email, and disposable will have OG IP in it, clear it
-	
 	* File-Sharing:
 		- OnionShare:
 			- encrypt before uploading, give password to recipient to decrypt
 			-  
 
+
+TODO: Disk encryption stuff..
+- https://web.archive.org/web/20170704130114/https://www.usna.edu/CyberDept/sy110//lec/cryptSymmEnc/lec.html
+- https://ssd.eff.org/en/module/deep-dive-end-end-encryption-how-do-public-key-encryption-systems-work
