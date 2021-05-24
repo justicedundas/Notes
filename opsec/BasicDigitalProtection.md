@@ -1,7 +1,8 @@
 # OpSec -> Security, Privacy, Anonymity
+
 Sources:
-	- Notes on go-incognito	-> https://github.com/techlore/go-incognito (youtube account has videos)
-	- Great courses available at -> https://www.hoppersroppers.org/security/
+- Notes on go-incognito	-> https://github.com/techlore/go-incognito (youtube account has videos)
+- Great courses available at -> https://www.hoppersroppers.org/security/
 
 Extra Resources (temp):
 * *IF* you have time and legit care, follow -> https://anonymousplanet.org/guide.html#introduction 
