@@ -32,15 +32,14 @@ Contents:
 	- "but I don't do anything wrong who cares?" -> https://www.youtube.com/watch?v=M5N51k0o_8A
 
 First steps:
-	* Check if accounts/emails have been hacked:
-		- https://haveibeenpwned.com/
-	* Follow this quick guide:
-		- https://decentsecurity.com/securing-your-computer/
-	* Digital autopsy:
-		- go to email accounts and search "verify", "login", etc. and deleted old crap you've signed up for
-		- remove unnecessary extensions and permission, check following:
-			- email device permissions, email service permissions, FB addons, Twitter addons, etc.
-
+* Check if accounts/emails have been hacked:
+	- https://haveibeenpwned.com/
+* Follow this quick guide:
+	- https://decentsecurity.com/securing-your-computer/
+* Digital autopsy:
+	- go to email accounts and search "verify", "login", etc. and deleted old crap you've signed up for
+	- remove unnecessary extensions and permission, check following:
+		- email device permissions, email service permissions, FB addons, Twitter addons, etc.
 
 ## 1. Privacy and Settings;
 * Windows 
