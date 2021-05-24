@@ -208,14 +208,15 @@ PUPs (potentially unwanted programs);
 
 ## 7. Browser Uniqueness, aka fingerprinting
 
-testing browser uniqueness;
+Testing Browser Uniqueness;
 * Panopticlick
 	- https://canvastrackersimulator.org/
 * AmIUnique
 	- https://www.amiunique.org/
 * BrowserSpy.dk
 	- http://browserspy.dk/	
-*these will show you are easily trackable... less unique means easier to target for hackers tho...*
+these will show you are easily trackable... tradeoff is less unique = easier target...
+
 Mitigation;
 * Noscript -> see above
 * UserAgent spoofer;
