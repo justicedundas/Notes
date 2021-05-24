@@ -10,22 +10,22 @@ Extra Resources (temp):
 
 
 Contents:
-	1. Permissions and Settings
-	2. Passwords
-	3. Two-Factor Authentication
-	4. Search Engines
-	5. Browser
-	6. Hardening Browser
-	7. Browsing Habits
-	8. Proxies and VPNs
-	9. Antivirus and Malware
-	10. File Deletion
-	11. Storage and Encryption
-		- HDD
-		- SSD
-	12. Safe Communication
-		- Mobile
-		- Email
+1. Permissions and Settings
+2. Passwords
+3. Two-Factor Authentication
+4. Search Engines
+5. Browser
+6. Hardening Browser
+7. Browsing Habits
+8. Proxies and VPNs
+9. Antivirus and Malware
+10. File Deletion
+11. Storage and Encryption
+	11.1 HDD
+	11.2 SSD
+12. Safe Communication
+	12.1 Mobile
+	12.2 Email
 
 
 * privacy and anonymity should not be overlooked... 
