@@ -1,6 +1,6 @@
 # OpSec -> Security, Privacy, Anonymity
 
-Notes on basic opsec concepts and tools for friends and family, see bottom of page for best available
+Notes on basic opsec concepts and tools for friends and family, see bottom of page for learning resources.
 
 - [OpSec -> Security, Privacy, Anonymity](#opsec----security--privacy--anonymity)
   - [1. Permissions and Settings;](#1-permissions-and-settings-)
