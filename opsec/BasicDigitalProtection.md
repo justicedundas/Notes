@@ -67,7 +67,7 @@ Password -> Hash/Salt on signup, if hash is known then tools like john the rippe
 Avoid by using;
 
 - Long passwords based on entropy in information theory ... use dice trick for random dictionary terms
-  - READ LINK BELOW... EXPLAINS INFO THEORY REGARDING STRONG PASSWORD... ORTHODOXY IS WRONG:
+  - READ LINK BELOW... EXPLAINS INFO THEORY REGARDING STRONG PASSWORD:
     - https://www.explainxkcd.com/wiki/index.php/936:_Password_Strength#Explanation
     - other great info, more technical: https://theworld.com/~reinhold/dicewarefaq.html#calculatingentropy
   - https://ssd.eff.org/en/module/creating-strong-passwords
